@@ -71,15 +71,17 @@ void arrayCommon(struct array *arrIn1, struct array *arrIn2, struct array *arrOu
                 {
                     if (*(arrOut->pdata + k == *(arrIn1 -> pdata + i))
                     {
-                        bool = 1;
+                        bool = 1; 
                     }
                 }
 
-                if (bool = 0)
+                if (bool == 0)
                 {
                     *(arrOut->pdata + tam) = *(arrIn1->pdata + i);
-                        tam++;
+                        tam++;         
                 }
+
+                //bool = 0;
             }
         
     }
