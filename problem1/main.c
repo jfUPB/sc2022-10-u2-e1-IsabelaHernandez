@@ -9,7 +9,6 @@
 #endif
 
 
-//Prueba commit
 
 struct array
 {
@@ -39,7 +38,20 @@ void printArray(struct array *parr)
 
 void getArray(struct array *parr)
 {
-    
+    int tam;
+    int i;
+    scanf("%d", &tam);
+
+    int arreglo[tam];
+
+    for (i = 0, i < n, i++)
+    {
+        int num;
+        scanf("%d", &num)
+            arreglo[i] = num;
+    }
+
+
 }
 
 void arrayCommon(struct array *arrIn1, struct array *arrIn2, struct array *arrOut)
