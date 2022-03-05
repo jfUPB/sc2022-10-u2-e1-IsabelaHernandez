@@ -70,7 +70,7 @@ void arrayCommon(struct array *arrIn1, struct array *arrIn2, struct array *arrOu
                
                 for (int k = 0; k < size; k++)
                 {
-                    if (*(arrOut->pdata + k == *(arrIn1 -> pdata + i))
+                    if (*(arrOut->pdata + k) == *(arrIn1 -> pdata + i))
                     {
                         bool = 1; 
                     }
