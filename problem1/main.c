@@ -33,24 +33,25 @@ void printArray(struct array *parr)
     {
         printf("%d ", parr->pdata[i]);
     }
-    printf("\n");
+    printf("\n"); 
 }
 
 void getArray(struct array *parr)
 {
     int tam;
-    int i;
     scanf("%d", &tam);
+    parr->size = tam;
 
-    int arreglo[tam];
+    int arreglo[tam]; //Arreglo temporal 
+    parr->pdata = malloc(sizeof(int) * parr);
 
     for (i = 0, i < n, i++)
     {
         int num;
         scanf("%d", &num)
             arreglo[i] = num;
+        parr->pdata[i] = arreglo[i];
     }
-
 
 }
 
