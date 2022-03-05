@@ -60,14 +60,15 @@ void arrayCommon(struct array *arrIn1, struct array *arrIn2, struct array *arrOu
 {
     arrOut->pdata = malloc(30);
     int tam = 0;
-    int bool = 0;
-
-    for (int i = 0; i <-arrIn1->size; i++)
+   
+    for (int i = 0; i < arrIn1->size; i++)
     {
         for(int j= 0; j<arrIn2->size; j++)
+
             if (*(arrIn1->pdata+i) == *(arrIn2->pdata+j))
             {
-               
+            
+                int bool = 0;
                 for (int k = 0; k < tam; k++)
                 {
                     if (*(arrOut->pdata + k) == *(arrIn1 -> pdata + i))
@@ -76,13 +77,13 @@ void arrayCommon(struct array *arrIn1, struct array *arrIn2, struct array *arrOu
                     }
                 }
 
-                if (bool == 0)
+                if (bool != 1)
                 {
                     *(arrOut->pdata + tam) = *(arrIn1->pdata + i);
                         tam++;         
                 }
 
-                bool = 0;
+                bool = 0; 
             }      
     }
 
