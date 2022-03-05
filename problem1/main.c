@@ -43,7 +43,7 @@ void getArray(struct array *parr)
     parr->size = tam;
 
     int arreglo[tam]; //Arreglo temporal 
-    parr->pdata = malloc(sizeof(int) * parr);
+    parr->pdata = malloc(sizeof(int) * parr->size);
 
     for (i = 0, i < n, i++)
     {
