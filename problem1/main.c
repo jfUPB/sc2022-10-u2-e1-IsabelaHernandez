@@ -81,7 +81,7 @@ void arrayCommon(struct array *arrIn1, struct array *arrIn2, struct array *arrOu
                         tam++;         
                 }
 
-                //bool = 0;
+                bool = 0;
             }
         
     }
