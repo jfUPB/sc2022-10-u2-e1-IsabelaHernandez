@@ -45,10 +45,11 @@ void getArray(struct array *parr)
     int arreglo[tam]; //Arreglo temporal 
     parr->pdata = malloc(sizeof(int) * parr->size);
 
-    for (i = 0, i < tam, i++)
+    int i;
+    for (i = 0; i < tam; i++)
     {
         int num;
-        scanf("%d", &num)
+        scanf("%d", &num);
             arreglo[i] = num;
         parr->pdata[i] = arreglo[i];
     }
